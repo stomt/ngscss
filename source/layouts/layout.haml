@@ -13,7 +13,7 @@
 
     = stylesheet_link_tag 'application'
 
-    = partial 'shared/google_analytics' if build?
+    -#= partial 'shared/google_analytics' if build?
 
   %body{ class: page_classes, 'data-id' => get_page_priority(current_page.data) }
 
@@ -34,6 +34,6 @@
 
           = partial 'shared/pager'
 
-    = partial 'shared/gauges' if build?
+    -#= partial 'shared/gauges' if build?
     = javascript_include_tag  'http://code.jquery.com/jquery-1.11.1.min.js'
     = javascript_include_tag  'application'

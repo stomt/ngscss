@@ -9,28 +9,26 @@ Manifest
 Now that we’ve touched on naming and piecemeal ideas, lets put it all together. NGSCSS expects the following setup wherever your styles are found:
 
 ```text
-application.sass
+app.scss
 foundation/
-  _reset.sass
-  _helpers.sass
-  _config.sass
-  _base.sass
-  _tools.sass
+  _reset.scss
+  _helpers.scss
+  _config.scss
+  _base.scss
+  _tools.scss
 components/
-structures/
-vendor/
 ```
 
-`application.sass` is used as the manifest and inbox (more on that later). Application as a name is derived from the Rails asset pipeline, and all other files are Sass partials imported in.
+The `Features` reside inside their particular directories in the AngularJS application. `app.scss` is used as the manifest and inbox (more on that later). Application as a name is derived from the Rails asset pipeline, and all other files are Sass partials imported in.
 
-Post compile, `application.css` is included on each site page and various settings can be employed for compression.
+Post compile, `app.css` is included on each site page and various settings can be employed for compression.
 
 Imports
 -------
 
 Files found in Foundation are imported into the manifest in a particular order, while Components and Structures are typically included alphabetically:
 
-```sass
+```scss
 // *************************************
 //
 //   Project Name
@@ -42,10 +40,17 @@ Files found in Foundation are imported into the manifest in a particular order, 
 //   Foundation
 // -------------------------------------
 
-@import "foundation/reset"
-@import "foundation/helpers"
-@import "foundation/config"
-@import "foundation/base"
+@import "foundation/_reset";
+@import "foundation/_config";
+@import "foundation/_helpers";
+@import "foundation/_base";
+@import "foundation/_tools";
+
+// -------------------------------------
+//   Vendor
+// -------------------------------------
+
+// Vendor imports
 
 // -------------------------------------
 //   Components
@@ -54,22 +59,10 @@ Files found in Foundation are imported into the manifest in a particular order, 
 // Component imports
 
 // -------------------------------------
-//   Structures
+//   Features
 // -------------------------------------
 
-// Structure imports
-
-// -------------------------------------
-//   Vendor
-// -------------------------------------
-
-// Third-party style imports, if needed
-
-// -------------------------------------
-//   Foundation - Tools
-// -------------------------------------
-
-@import "foundation/tools"
+// Feature imports
 
 // -------------------------------------
 //   Inbox
@@ -79,9 +72,9 @@ Files found in Foundation are imported into the manifest in a particular order, 
 Inbox
 -----
 
-Collaboration with developers can sometimes be difficult, but we've found a way to help mitigate that (at least as it relates to CSS). At the bottom of the `application.sass` file, there's a comment block that looks like this:
+Collaboration with developers can sometimes be difficult, but we've found a way to help mitigate that (at least as it relates to CSS). At the bottom of the `app.scss` file, there's a comment block that looks like this:
 
-```sass
+```scss
 // -------------------------------------
 //   Inbox
 // -------------------------------------

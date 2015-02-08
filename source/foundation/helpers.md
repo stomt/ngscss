@@ -22,29 +22,20 @@ We use mixins to reduce the amount of repeated code when authoring style sheets.
 
 Take media queries for example: the most commonly used arguments are `screen` and `min-width`, so we made a mixin that includes those values as defaults, unless stated otherwise.
 
-```sass
-// ----- Respond-to ----- //
-// -> Generates a media query
+```scss
+// ----- Input Placeholder ----- //
+// -> Adds placeholder prefixes
 //
-// $val - the breakpoint size
-// $query - the type of query ('min-width', 'max-width')
-// $media - the media type ('screen', 'print', etc.)
 // @content - the generated content within the mixin
 //
 
-=respond-to($val, $query: min-width, $media: screen)
-  @media #{$media} and ($query: $val)
-    @content
-```
-
-By now using the `respond-to` mixin throughout a project, you can write less code to achieve the same result.
-
-```sass
-// Standard CSS
-@media screen and (min-width: $g-m)
-
-// Sass mixin
-+respond-to($g-m)
+@mixin input-placeholder {
+  &.placeholder                 { @content; }
+  &:-moz-placeholder            { @content; }
+  &::-moz-placeholder           { @content; }
+  &:-ms-input-placeholder       { @content; }
+  &::-webkit-input-placeholder  { @content; }
+}
 ```
 
 Entries in the Mixin section should always take arguments and have the ability to differ when utilized. If you're looking to add an unchanging group of properties to reuse, they belong in Extends.
@@ -60,13 +51,14 @@ Even though we frequently extend these classes within modules, we avoid the perc
 
 The `group` class applies multiple rules to a single element, and in the following example, we're using it directly in the markup.
 
-```sass
+```scss
 // ----- Clearfix ----- //
 
-.group::after
+.group::after {
   clear: both
   content: ''
   display: table
+}
 ```
 
 ```html
@@ -80,14 +72,16 @@ The `group` class applies multiple rules to a single element, and in the followi
 
 In the following `g` (grid) Component, we extend the `group` class within the module itself.
 
-```sass
-.g
+```scss
+.g {
   @extend .group
   display: block
   margin-left: -$g-gutter / 2
   margin-right: -$g-gutter / 2
+}
 ```
 
+<!--
 Animations
 ----------
 
@@ -97,7 +91,7 @@ If you catch yourself defining a similar animation in two separate places, we tr
 
 For example, in the case of `fadeIn`, we're likely to use this animation across many different modules, making it a perfect animation to define inside Helpers.
 
-```sass
+```scss
 // ----- Fade In ----- //
 
 @keyframes fadeIn
@@ -108,5 +102,6 @@ For example, in the case of `fadeIn`, we're likely to use this animation across 
 ```
 
 **Note:** animations unique to specific modules are defined at the bottom of their respective style sheets.
+-->
 
 [csswizardry-extends]: http://csswizardry.com/2014/01/extending-silent-classes-in-sass/

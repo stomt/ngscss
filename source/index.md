@@ -10,11 +10,11 @@ Overview
 
 CSS, for all its simplicity, is a difficult language to manage in large-scale implementations. Naming, paths to abstraction, structure, and methodologies are all free-form; NGSCSS seeks to provide order for these sorts of projects.
 
-Keeping with an architecture motif, applications are split into three major categories: [*Foundation*][foundation], [*Components*][components], and [*Structures*][structures]. If Foundation represents tools, materials, and the ground level, Components are akin to creating a window, while Structures mirror a number of windows and doors creating a wall.
+Keeping with an architecture motif, applications are split into three major categories: [*Foundation*][foundation], [*Components*][components], and [*Features*][features]. If Foundation represents tools, materials, and the ground level, Components are akin to creating a window, while Features mirror a number of windows and doors creating a wall.
 
 For a very early taste, here’s what a simple Component might consist of:
 
-```sass
+```scss
 // *************************************
 //
 //   Card
@@ -22,11 +22,12 @@ For a very early taste, here’s what a simple Component might consist of:
 //
 // *************************************
 
-.card
-  background: $c-invert
-  border-radius: $b-borderRadius
-  box-shadow: $b-boxShadow
-  padding: $b-space
+.card {
+  background: $c-invert;
+  border-radius: $b-borderRadius;
+  box-shadow: $b-boxShadow;
+  padding: $b-space;
+}
 
 // -------------------------------------
 //   Modifiers
@@ -34,21 +35,24 @@ For a very early taste, here’s what a simple Component might consist of:
 
 // ----- Sizes ----- //
 
-.card--s
-  padding: $b-space-s
+.card--s {
+  padding: $b-space-s;
+}
 
 // ----- Theme ----- //
 
 // Hierarchy
 
-.card--b
-  background: $c-highlight
+.card--b {
+  background: $c-highlight;
+}
 
 // Error
 
-.card--error
-  border: 2px $b-borderStyle $c-error
-  box-shadow: none
+.card--error {
+  border: 2px $b-borderStyle $c-error;
+  box-shadow: none;
+}
 
 // -------------------------------------
 //   Scaffolding
@@ -56,10 +60,11 @@ For a very early taste, here’s what a simple Component might consist of:
 
 // ----- Label ----- //
 
-.card-label
-  font-size: $b-fontSize-s
-  font-weight: bold
-  text-transform: uppercase
+.card-label {
+  font-size: $b-fontSize-s;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 ```
 
 There’s no shortage of wonderful frameworks, ideas, and methods for tackling CSS across the web, and NGSCSS wouldn’t exist without ideas set forth in few of these. Take a look at the [Resources][resources] section to find out more about our architectural roots.
@@ -68,4 +73,4 @@ There’s no shortage of wonderful frameworks, ideas, and methods for tackling C
 [components]: /components
 [foundation]: /foundation
 [resources]: /resources
-[structures]: /structures
+[features]: /features

@@ -37,10 +37,11 @@ If you find yourself using multiple Tools to achieve a reusable group of styles,
 
 In the example above, we're trying to create a large button by using only Tools. While our approach achieves the intended effect, we're much better off defining those common styles in a `.btn--l` class, and then applying it in the markup.
 
-```sass
-.btn--l
+```scss
+.btn--l {
   font-size: $b-fontSize-l
   padding: $b-space $b-space-l
+}
 ```
 
 ```html

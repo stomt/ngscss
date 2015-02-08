@@ -21,19 +21,18 @@ Style Sheets
 - Stick with classes instead of IDs for styling
 - Limit nesting as much as possible
 
-```sass
+```scss
 // Example
 
-.component
-  @extend .group
-  +transition(opacity 0.2s ease-in-out)
-  border-radius: 5px
-  box-shadow: 0 2px 5px rgba(#000, 0.5)
-  -webkit-flex: 1 1 50%
-  -ms-flex: 1 1 50%
-  flex: 1 1 50%
-  font-style: italic
-  padding-bottom: $b-space * 3
+.component {
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(#000, 0.5);
+  -webkit-flex: 1 1 50%;
+  -ms-flex: 1 1 50%;
+  flex: 1 1 50%;
+  font-style: italic;
+  padding-bottom: $b-space * 3;
+}
 ```
 
 Markup

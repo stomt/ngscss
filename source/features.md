@@ -1,11 +1,12 @@
 ---
-title: Structures
+title: Features
 type: page
 ---
 
-Structures
+Features
 ==========
 
+<!--
 Structures are a project's modules and user interface elements that are too specialized for use across multiple sites. In some cases, they might assume a certain context or content type, and in other cases, they might include thematic styles or responsive layout.
 
 When explaining what characterizes a Component versus a Structure, we outlined a few considerations that help us determine between the two:
@@ -78,16 +79,16 @@ Using both the `g` (grid) Component and the `collection` Structure, we can apply
 ```html
 <div class="g collection collection--1of3">
   <div class="g-b g-b--1of3 collection-item">
-    <!-- Content -->
+    <!-- Content ->
   </div>
   <div class="g-b g-b--1of3 collection-item">
-    <!-- Content -->
+    <!-- Content ->
   </div>
   <div class="g-b g-b--1of3 collection-item">
-    <!-- Content -->
+    <!-- Content ->
   </div>
   <div class="g-b g-b--1of3 collection-item">
-    <!-- Content -->
+    <!-- Content ->
   </div>
 </div>
 ```
@@ -124,16 +125,16 @@ And now we apply only a *single set* of classes in the markup.
 ```html
 <div class="collection collection--1of3">
   <div class="collection-item">
-    <!-- Content -->
+    <!-- Content ->
   </div>
   <div class="collection-item">
-    <!-- Content -->
+    <!-- Content ->
   </div>
   <div class="collection-item">
-    <!-- Content -->
+    <!-- Content ->
   </div>
   <div class="collection-item">
-    <!-- Content -->
+    <!-- Content ->
   </div>
 </div>
 ```
@@ -142,3 +143,4 @@ Portability
 -----------
 
 In the end, limiting scope and minimizing dependencies both affect *portability*, which is usually our biggest concern when classifying modules. If you can easily tweak a few lines of CSS inside a module and use it between projects, that means it's reasonably portable, and you have solid grounds for classifying it as a Component. On the other hand, if try to port a module and find yourself rewriting a significant amount of code, then the module is likely better classified as a Structure.
+-->

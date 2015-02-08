@@ -7,6 +7,11 @@ secondary: true
 Resources
 =========
 
+MVCSS
+-------------
+[MVCSS][MVCSS] [Modular View CSS] is the base of this fork. It is Sass-based an can be applied to all different kinds of applications.
+
+
 MVCSS Library
 -------------
 
@@ -47,4 +52,5 @@ We’re always on the lookout for new approaches and better means of abstraction
 - [Your CSS Is a Mess](https://vimeo.com/61755493)
 
 
+[MVCSS]: http://mvcss.io/
 [library]: https://github.com/mvcss/library

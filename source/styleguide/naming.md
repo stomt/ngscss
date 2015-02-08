@@ -8,7 +8,7 @@ nested: true
 Styleguide - Naming Conventions
 ===============================
 
-Following ideas pioneered in [BEM][bem-definitions] and [SUIT][suit-naming-conventions], MVCSS has a strict series of naming conventions that provide context at a glance.
+Following ideas pioneered in [BEM][bem-definitions] and [SUIT][suit-naming-conventions], NGSCSS has a strict series of naming conventions that provide context at a glance.
 
 Tools
 -----
@@ -124,7 +124,7 @@ Generally added via JavaScript, states are similar to modifiers but carry condit
   background: $c-highlight
 ```
 
-We use `is-active` as a convention throughout MVCSS, but any state can affect any module in a unique way. For example, applying `is-active` on an `btn` may have a completely different effect from applying `is-active` on a `nav-item`. By using only compound selectors (`.module.is-state`) to define state, we're able to increase specificity when needed, while also containing any changes within a single module's namespace.
+We use `is-active` as a convention throughout NGSCSS, but any state can affect any module in a unique way. For example, applying `is-active` on an `btn` may have a completely different effect from applying `is-active` on a `nav-item`. By using only compound selectors (`.module.is-state`) to define state, we're able to increase specificity when needed, while also containing any changes within a single module's namespace.
 
 Context
 -------

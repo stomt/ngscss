@@ -6,9 +6,9 @@ type: page
 Overview
 ========
 
-**MVCSS** [Modular View CSS] is a Sass-based CSS architecture for creating predictable and maintainable application style.
+**NGSCSS** [Angular SCSS] is a Scss-based CSS architecture for creating predictable and maintainable style for AngularJS Application which follow a modular feature based structure. It is based on [MVCSS](http://mvcss.io/) which is Sass based and not AngularJS specific.
 
-CSS, for all its simplicity, is a difficult language to manage in large-scale implementations. Naming, paths to abstraction, structure, and methodologies are all free-form; MVCSS seeks to provide order for these sorts of projects.
+CSS, for all its simplicity, is a difficult language to manage in large-scale implementations. Naming, paths to abstraction, structure, and methodologies are all free-form; NGSCSS seeks to provide order for these sorts of projects.
 
 Keeping with an architecture motif, applications are split into three major categories: [*Foundation*][foundation], [*Components*][components], and [*Structures*][structures]. If Foundation represents tools, materials, and the ground level, Components are akin to creating a window, while Structures mirror a number of windows and doors creating a wall.
 
@@ -62,7 +62,7 @@ For a very early taste, here’s what a simple Component might consist of:
   text-transform: uppercase
 ```
 
-There’s no shortage of wonderful frameworks, ideas, and methods for tackling CSS across the web, and MVCSS wouldn’t exist without ideas set forth in few of these. Take a look at the [Resources][resources] section to find out more about our architectural roots.
+There’s no shortage of wonderful frameworks, ideas, and methods for tackling CSS across the web, and NGSCSS wouldn’t exist without ideas set forth in few of these. Take a look at the [Resources][resources] section to find out more about our architectural roots.
 
 
 [components]: /components

@@ -8,7 +8,8 @@
       %title= "#{current_page.data.title} / #{data.leo.title}" || data.leo.title
     - else
       %title= "#{current_page.data.parent} - #{current_page.data.title} / #{data.leo.title}" || data.leo.title
-    %meta{ :name => "description", :content => "MVCSS - A Sass-based CSS architecture for creating predictable and maintainable application style." }
+    %meta{ :name => "description", :content => "NGSCSS - A Scss-based CSS architecture for creating predictable and maintainable style for AngularJS applications." }
+    %link{:href => "/assets/images/favicon.ico", :rel => "shortcut icon"}/
 
     = stylesheet_link_tag 'application'
 

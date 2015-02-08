@@ -47,7 +47,7 @@ Dependencies
 
 Unlike Components, Structures can depend on, or even extend, pre-existing Components. This is useful when you want to add theme or behavior to a Component, but keep any unique changes contained within their own module.
 
-In MVCSS, we use our `g` (grid) Component primarily for page layout. We try to keep it simple and assume as little as possible, but there are cases where we want to include similar functionality inside of a more specific module. Float-based grids don't always behave predictably when their items have variable a height, so we've defined a `collection` Structure to add contextual clearfixing.
+In NGSCSS, we use our `g` (grid) Component primarily for page layout. We try to keep it simple and assume as little as possible, but there are cases where we want to include similar functionality inside of a more specific module. Float-based grids don't always behave predictably when their items have variable a height, so we've defined a `collection` Structure to add contextual clearfixing.
 
 ```sass
 .collection

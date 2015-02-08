@@ -32,7 +32,7 @@ If serving font files from a known path (e.g. your server), we include Bourbon's
 Variables
 ---------
 
-All variables in MVCSS are defined in Config and are prefixed by their role or respective Component/Structure.
+All variables in NGSCSS are defined in Config and are prefixed by their role or respective Component/Structure.
 
 - `$b-*` for base variables
 - `$c-*` for colors

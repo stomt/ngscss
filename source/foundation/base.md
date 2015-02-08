@@ -34,7 +34,7 @@ body
 Block Content
 -------------
 
-Block content is made up of all the block-level elements needed in an MVCSS project. Typically, this section includes the aforementioned headings, paragraphs, lists, as well as figures, blockquotes, and more.
+Block content is made up of all the block-level elements needed in an NGSCSS project. Typically, this section includes the aforementioned headings, paragraphs, lists, as well as figures, blockquotes, and more.
 
 Collapsing margins, while an intentional feature of CSS, only add complexity when authoring style sheets, so we limit vertical margins on block-level elements to a [single-direction][csswizardry-margins].
 

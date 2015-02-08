@@ -6,7 +6,7 @@ type: page
 Manifest
 ========
 
-Now that we’ve touched on naming and piecemeal ideas, lets put it all together. MVCSS expects the following setup wherever your styles are found:
+Now that we’ve touched on naming and piecemeal ideas, lets put it all together. NGSCSS expects the following setup wherever your styles are found:
 
 ```text
 application.sass

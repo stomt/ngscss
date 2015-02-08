@@ -8,7 +8,7 @@ nested: true
 Foundation - Helpers
 ====================
 
-Helpers are the functions, mixins, extends, and animations used throughout an MVCSS application.
+Helpers are the functions, mixins, extends, and animations used throughout an NGSCSS application.
 
 Functions
 ---------

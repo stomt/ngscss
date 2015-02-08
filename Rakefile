@@ -2,12 +2,12 @@ desc "Generate flat files with Middleman"
 task :generate do
   puts "## Generating site with Middleman"
   system "rm -rf build"
-  system "./bin/middleman build --clean"
+  system "middleman build --clean"
   system "cp CNAME build/CNAME"
   cd "build" do
     system "touch .nojekyll"
     system "git init"
-    system "git remote add origin git@github.com:mvcss/mvcss.github.com.git"
+    system "git remote add origin git@github.com:stomt/ngscss.git"
   end
 end
 
@@ -18,7 +18,8 @@ task :push do
     system "git add ."
     system "git add -u"
     system "git commit -m \"Site updated at #{Time.now.utc}\""
-    system "git push origin master --force"
+    system "git checkout -b gh-pages"
+    system "git push origin gh-pages --force"
   end
 end
 

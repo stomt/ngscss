@@ -55,9 +55,9 @@ The `group` class applies multiple rules to a single element, and in the followi
 // ----- Clearfix ----- //
 
 .group::after {
-  clear: both
-  content: ''
-  display: table
+  clear: both;
+  content: '';
+  display: table;
 }
 ```
 
@@ -74,10 +74,10 @@ In the following `g` (grid) Component, we extend the `group` class within the mo
 
 ```scss
 .g {
-  @extend .group
-  display: block
-  margin-left: -$g-gutter / 2
-  margin-right: -$g-gutter / 2
+  @extend .group;
+  display: block;
+  margin-left: -$g-gutter / 2;
+  margin-right: -$g-gutter / 2;
 }
 ```
 

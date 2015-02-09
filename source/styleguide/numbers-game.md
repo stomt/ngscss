@@ -23,6 +23,6 @@ This setup should be a easier to grasp once we reach the Config, Tools, and Base
 **Note:** pixel values will occasionally be required to meet design requirements, especially with things like offsets. Most often, these are considered [magic numbers][csswizardry-magic-numbers], and you should avoid using them as much as possible.
 
 
-[foundation]: /foundation
+[foundation]: ../../foundation
 
 [csswizardry-magic-numbers]: http://csswizardry.com/2012/11/code-smells-in-css/

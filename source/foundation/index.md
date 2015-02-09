@@ -11,8 +11,8 @@ Foundation represents the tools and materials required at the ground level of an
 
 Foundation is made up of:
 
-- [Reset](/foundation/reset/)
-- [Config](/foundation/config/)
-- [Helpers](/foundation/helpers/)
-- [Base](/foundation/base/)
-- [Tools](/foundation/tools/)
+- [Reset](foundation/reset/)
+- [Config](foundation/config/)
+- [Helpers](foundation/helpers/)
+- [Base](foundation/base/)
+- [Tools](foundation/tools/)

@@ -70,7 +70,7 @@ For a very early taste, here’s what a simple Component might consist of:
 There’s no shortage of wonderful frameworks, ideas, and methods for tackling CSS across the web, and NGSCSS wouldn’t exist without ideas set forth in few of these. Take a look at the [Resources][resources] section to find out more about our architectural roots.
 
 
-[components]: /components
-[foundation]: /foundation
-[resources]: /resources
-[features]: /features
+[components]: components
+[foundation]: foundation
+[resources]: resources
+[features]: features

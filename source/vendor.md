@@ -15,4 +15,4 @@ If a snippet of code is portable and no larger than a single class, we usually p
 **Note:** although `_reset.scss` contains third-party code, we include it inside Foundation. This helps us organize low-level styles and prevent some potential source order dependency issues when authoring CSS.
 
 
-[helpers]: /foundation/helpers/
+[helpers]: foundation/helpers/
